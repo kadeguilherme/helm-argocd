@@ -6,11 +6,11 @@ spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: "helm-argocd"
+      app: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: "helm-argocd"
+        app: {{ .Release.Name }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
