@@ -1,9 +1,6 @@
 apiVersion: v2
-name: .
-description: A Helm chart for Kubernetes
-
-type: application
-
+name: my-simple-chart
+description: Uma descrição opcional para o seu Helm chart
+type: application  # Pode ser 'library' se for uma biblioteca Helm
 version: 0.1.0
-
-appVersion: "1.16.0"
+appVersion: 1.0.0
